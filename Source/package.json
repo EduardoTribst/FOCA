@@ -1,0 +1,8 @@
+{
+  "name": "Source",
+  "private": true,
+  "workspaces": [
+    "API",
+    "Front-end-web"
+  ]
+}
