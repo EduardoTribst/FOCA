@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: var(--background-off-white);
+}
+
+.header-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.header-titulo {
+  font-size: 2rem;
+  font-family: var(--fonte-ubuntu);
+  font-weight: 500;
+}
+
+.header-direita {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-link {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header-botao {
+  background-color: #56639c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+}

@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom';
+import Header from '../components/header';
+import logoFoca from "../assets/foca.svg";
 
 export default function Inicial(){
     const navigate = useNavigate()
@@ -9,10 +11,14 @@ export default function Inicial(){
 
     return(
         <div>
+            <Header
+            titulo="FOCA"
+            links={[
+                { texto: "Início", destino: "/" },
+                { texto: "Criar conta", destino: "/cadastro" }
+            ]}
+            />
             <h1>Tela Inicial</h1>
-            <button onClick={irParaLogin}>
-                Entrar
-            </button>
         </div>
         
     )
