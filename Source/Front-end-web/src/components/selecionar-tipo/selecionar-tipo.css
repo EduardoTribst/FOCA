@@ -4,11 +4,11 @@
 
   display: flex;
 
-  border: 4px solid black;
+  border: 3px solid var(--preto);
   border-radius: 20px;
   overflow: hidden;
 
-  background-color: white;
+  background-color: var(--branco);
 }
 
 /* botão base */
@@ -16,7 +16,7 @@
   flex: 1;
 
   border: none;
-  background-color: white;
+  background-color: var(--branco);
 
   font-size: 0.8rem;
   font-weight: 700;
@@ -32,11 +32,11 @@
 
 /* linha do meio */
 .campo-seletor.esquerda {
-  border-right: 4px solid var(--preto);
+  border-right: 3px solid var(--preto);
 }
 
 /* estado ativo */
 .campo-seletor.ativo {
   background-color: var(--azul-menos-claro); 
-  color: white;
+  color: var(--branco);
 }
