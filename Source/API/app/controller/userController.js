@@ -1,9 +1,10 @@
 
 const ProfessorCRUD = require('../db/professorCRUD');
+const InstituicaoCRUD = require('../db/instituicaoCRUD');
 
-// handles the responses from the CRUD class
+// handles methods that are from PROFESSOR and from INSTITUICAO at the same time. Login, for example.
 
-class ProfessorController{
+class UserController{
 
   listAllProfessors = 
     async (req, res) =>{
