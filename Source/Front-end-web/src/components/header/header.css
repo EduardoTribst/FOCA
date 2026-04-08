@@ -7,7 +7,7 @@
   background-color: var(--background-off-white);
 }
 
-.header-esquerda {
+.header-left {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -19,13 +19,13 @@
   object-fit: contain;
 }
 
-.header-titulo {
+.header-title {
   font-size: 2rem;
   font-family: var(--fonte-ubuntu);
   font-weight: 500;
 }
 
-.header-direita {
+.header-right {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 
-.header-botao {
+.header-button {
   background-color: #56639c;
   color: white;
   border: none;

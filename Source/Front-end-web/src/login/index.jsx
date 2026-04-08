@@ -3,18 +3,18 @@ import SeletorTipo from "../components/selecionar-tipo";
 import { useState } from "react";
   
 export default function Login(){
-    const [tipoSelecionado, setTipoSelecionado] = useState("professor");
+    const [selectedType, setSelectedType] = useState("professor");
 
     return (
         <div>
             <h1>Login</h1>
 
             <SeletorTipo
-            opcao={tipoSelecionado}
-            aoSelecionar={setTipoSelecionado}
+            option={selectedType}
+            onSelect={setSelectedType}
             />
 
-            <h1>{tipoSelecionado}</h1>
+            <h1>{selectedType}</h1>
         </div>
         
     )

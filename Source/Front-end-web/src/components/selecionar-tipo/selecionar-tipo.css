@@ -1,4 +1,4 @@
-.seletor {
+.selector {
   width: 220px;
   height: 35px;
 
@@ -11,8 +11,8 @@
   background-color: var(--branco);
 }
 
-/* botão base */
-.campo-seletor {
+/* base button */
+.selector-field {
   flex: 1;
 
   border: none;
@@ -30,13 +30,13 @@
   justify-content: center;
 }
 
-/* linha do meio */
-.campo-seletor.esquerda {
+/* middle line */
+.selector-field.left {
   border-right: 3px solid var(--preto);
 }
 
-/* estado ativo */
-.campo-seletor.ativo {
+/* active state */
+.selector-field.active {
   background-color: var(--azul-menos-claro); 
   color: var(--branco);
 }

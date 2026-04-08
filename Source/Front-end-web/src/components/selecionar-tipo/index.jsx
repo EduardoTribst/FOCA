@@ -1,22 +1,22 @@
 import "./selecionar-tipo.css";
 
-export default function SelecionarTipo({opcao, aoSelecionar}){
+export default function SelecionarTipo({option, onSelect}){
     return(
-        <div className="seletor">
+        <div className="selector">
             <button
-            className={`campo-seletor esquerda ${
-                opcao === "professor" ? "ativo" : "" //se opção selecionada for professor adiciona ativo no nome da classe se não adiciona ""
+            className={`selector-field left ${
+                option === "professor" ? "active" : "" // if the selected option is professor add active class to the button name if not add empty string
             }`}
-            onClick={() => aoSelecionar("professor")}
+            onClick={() => onSelect("professor")}
             >
                 Professor
             </button>
 
             <button
-            className={`campo-seletor direita ${
-                opcao === "instituicao" ? "ativo" : "" //se opção selecionada for Instituição adiciona ativo no nome da classe se não adiciona ""
+            className={`selector-field right ${
+                option === "instituicao" ? "active" : "" // if the selected option is institution add active class to the button name if not add empty string
             }`}
-            onClick={() => aoSelecionar("instituicao")}
+            onClick={() => onSelect("instituicao")}
             >
                 Instituição
             </button>
