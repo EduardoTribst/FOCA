@@ -1,11 +1,10 @@
 import "./dropzone-upload-video.css";
 import { useRef, useState } from "react";
 
-export default function DropzoneUploadVideo(){
+export default function DropzoneUploadVideo({ selectedFiles = [], setSelectedFiles }) {
 
     const inputRef = useRef(null);
     const [isDragging, setIsDragging] = useState(false);
-    const [selectedFiles, setSelectedFiles] = useState([]);
 
     function handleFiles(files) {
         const validVideos = Array.from(files).filter(file =>
