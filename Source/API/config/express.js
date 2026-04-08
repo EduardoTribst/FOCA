@@ -6,6 +6,6 @@ const professorRoutes = require('../app/routes/professorRoutes');
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-app.use('professor', professorRoutes);
+app.use('/professor', professorRoutes);
 
 module.exports = app;

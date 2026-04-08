@@ -1,10 +1,23 @@
 
 const db = require('../../config/dbConfig');
 
+// database acess logic
+
 class ProfessorCRUD {
 
   constructor() {
     this._db = db.getConnection();
+  }
+
+  professorLogin() {
+    return new Promise((resolve, reject) => {
+      try{
+        
+      }
+      catch(error){
+        reject(error);
+      }
+    });
   }
 
   listProfessors() {
@@ -16,12 +29,14 @@ class ProfessorCRUD {
         }];
         resolve(recordset);
       }
-      catch{
-        reject("Mensagem de erro");
+      catch(error){
+        reject(error);
       }
       
     });
   }
+
+
 }
 
 module.exports = ProfessorCRUD;

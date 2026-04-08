@@ -1,6 +1,6 @@
 
 require('dotenv').config();
-//const sql = require("mssql"); // talvez mudar isso depois(se não for usar sql server)
+//const sql = require("mssql"); // change in case we don't use mssql
 
 async function getConnection(){
   // TODO
