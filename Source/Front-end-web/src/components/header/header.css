@@ -1,10 +1,17 @@
 .header {
   width: 100%;
+  padding: 8px 64px;
+  background-color: var(--background-off-white);
+  box-sizing: border-box;
+}
+
+.header-elements {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 32px;
-  background-color: var(--background-off-white);
+  border-bottom: 1px solid var(--bar-light-blue);
+  padding: 5px 50px 10px 50px;
 }
 
 .header-left {
@@ -14,21 +21,21 @@
 }
 
 .header-logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
 .header-title {
   font-size: 2rem;
-  font-family: var(--fonte-ubuntu);
+  font-family: var(--fonte-scada);
   font-weight: 500;
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 70px;
 }
 
 .header-link {
@@ -39,11 +46,28 @@
 }
 
 .header-button {
-  background-color: #56639c;
-  color: white;
+  background: var(--transparent-grayish-blue);
   border: none;
-  border-radius: 6px;
-  padding: 10px 22px;
-  font-size: 1rem;
+  border-radius: 14px;
+  padding: 10px 20px;
   cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.content-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.user-icon, .home-icon, .info-icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  display: block;
+  flex-shrink: 0;
 }
