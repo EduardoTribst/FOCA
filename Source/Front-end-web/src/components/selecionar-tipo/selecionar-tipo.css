@@ -4,11 +4,11 @@
 
   display: flex;
 
-  border: 3px solid var(--preto);
+  border: 3px solid var(--black);
   border-radius: 20px;
   overflow: hidden;
 
-  background-color: var(--branco);
+  background-color: var(--white);
 }
 
 /* base button */
@@ -16,27 +16,29 @@
   flex: 1;
 
   border: none;
-  background-color: var(--branco);
+  background-color: var(--white);
 
   font-size: 0.8rem;
   font-weight: 700;
 
-  font-family: var(--fonte-ubuntu);
+  font-family: var(--font-inter);
 
   cursor: pointer;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: var(--black);
 }
 
 /* middle line */
 .selector-field.left {
-  border-right: 3px solid var(--preto);
+  border-right: 3px solid var(--black);
 }
 
 /* active state */
 .selector-field.active {
-  background-color: var(--azul-menos-claro); 
-  color: var(--branco);
+  background-color: var(--button-dark-blue); 
+  color: var(--white);
 }

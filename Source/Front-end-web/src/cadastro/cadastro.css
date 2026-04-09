@@ -38,7 +38,7 @@
 .start-text{
     color: var(--deep-blue-accent);
     font-weight: 700;
-    font-family: var(--fonte-scada);
+    font-family: var(--font-inter);
 }
 
 .right{
@@ -46,6 +46,20 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 40px 40px;
+}
+
+.sign-in-button{
+    background: var(--transparent-grayish-blue);
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+    align-self: flex-end;  
 }

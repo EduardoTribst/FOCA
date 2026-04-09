@@ -2,9 +2,17 @@ import { useNavigate } from 'react-router-dom';
 import './cadastro.css';
 import SealIcon from "../assets/seal.svg?react";
 import HomeIcon from "../assets/home.svg?react";
-
+import SeletorTipo from '../components/selecionar-tipo';
+import { useState } from "react";
 
 export default function Cadastro(){
+    const navigate = useNavigate();
+    const [selectedType, setSelectedType] = useState("professor");
+
+    function goTo(path) {
+        navigate(path);
+    }
+
     return (
         <div className='cadastro-body'>
             {/*esquerda*/}
@@ -25,7 +33,7 @@ export default function Cadastro(){
             <div className='right'>
                 {/*botao inicio*/}
                 <button
-                    className="header-button"
+                    className="sign-in-button"
                     onClick={() => goTo("/")}
                 >
                     <div className="content-button">
@@ -34,7 +42,12 @@ export default function Cadastro(){
                     </div>
 
                 </button>
-                {/*SeletorTipo*/}
+
+                <SeletorTipo
+                    option={selectedType}
+                    onSelect={setSelectedType}
+                />
+                
                 {/*Email da instituição/professor*/}
                 {/*nome da instituição/professor*/}
                 {/*senha*/}
