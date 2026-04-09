@@ -1,6 +1,6 @@
 import "./header.css";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/seal.svg";
+import LogoIcon from "../../assets/seal.svg?react";
 import UserIcon from "../../assets/user.svg?react";
 import HomeIcon from "../../assets/home.svg?react";
 import InfoIcon from "../../assets/info.svg?react";
@@ -23,7 +23,7 @@ export default function Header({
 			<div className="header-elements">
 				<div className="header-left">
 
-					<img src={logo} alt="Logo" className="header-logo" />
+					<LogoIcon className="header-logo" />
 					<h1 className="header-title">FOCA</h1>
 
 				</div>

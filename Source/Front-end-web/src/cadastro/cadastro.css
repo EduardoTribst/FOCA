@@ -1,0 +1,51 @@
+.cadastro-body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 40%;
+    min-height: 100vh;
+    background-color: var(--side-login-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+
+}
+
+.title-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+}
+
+.seal-icon{
+    width: 160px;
+    height: 160px;
+}
+
+.start-text{
+    color: var(--deep-blue-accent);
+    font-weight: 700;
+    font-family: var(--fonte-scada);
+}
+
+.right{
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

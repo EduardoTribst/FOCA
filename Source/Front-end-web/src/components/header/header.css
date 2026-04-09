@@ -51,7 +51,7 @@
   border-radius: 14px;
   padding: 10px 20px;
   cursor: pointer;
-  color: black;
+  color: var(--black);
   font-size: 18px;
   font-weight: 500;
   transition: 0.2s;
